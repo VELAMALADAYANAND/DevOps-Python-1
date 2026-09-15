@@ -23,6 +23,13 @@ jobs:
 
       - name: List Files
         run: ls -la
+      
+      - name: Debug
+        run: |
+          pwd
+          ls -la
+          find . -name "*.py"
+          cat test_app.py
 
       - name: Show Test File
         run: cat test_app.py
